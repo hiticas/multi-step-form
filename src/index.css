@@ -1,0 +1,105 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-ubuntu bg-lightblue1;
+}
+
+.app {
+  @apply max-w-4xl mx-10 mt-[150px] bg-white rounded-xl lg:mx-auto;
+}
+
+.multi_step_form {
+  @apply flex flex-col h-[500px] md:flex-row;
+}
+
+.main {
+  @apply w-full p-10 flex flex-col justify-between flex-1 md:p-16 lg:p-24;
+}
+
+.sidebar {
+  @apply p-8 m-4 object-cover bg-no-repeat bg-cover bg-bottom rounded-3xl md:rounded-xl md:min-w-[250px] md:mr-0 bg-[url('/src/assets/images/bg-sidebar-desktop.svg')];
+}
+
+.sidebar ul {
+  @apply flex  gap-6 justify-center md:justify-start md:flex-col;
+}
+
+.sidebar_step {
+  @apply flex gap-4 items-center;
+}
+
+.sidebar_step span {
+  @apply rounded-full w-[35px] h-[35px] text-center text-sm font-bold;
+}
+
+.sidebar ul {
+  @apply list-none p-0 m-0;
+}
+
+.sidebar li span {
+  @apply p-1.5 border border-white bg-transparent text-white;
+}
+
+.sidebar li.active span {
+  @apply bg-[#bfe1fd] text-black;
+}
+
+.sidebar li:hover span {
+  @apply bg-[#bfe1fd] text-black cursor-pointer;
+}
+
+.sidebar li:hover {
+  @apply cursor-pointer;
+}
+
+.actions {
+  @apply flex justify-between;
+}
+
+.actions button {
+  @apply font-bold py-2 px-4 rounded;
+}
+
+.btn_prev {
+  @apply bg-gray-300 hover:bg-gray-400 text-gray-800;
+}
+.btn_next {
+  @apply bg-darkblue hover:bg-blue-700 text-white ml-auto;
+}
+.btn_submit {
+  @apply bg-green-500 hover:bg-green-700 text-white;
+}
+
+.icon_check {
+  @apply w-[100px] h-[100px] bg-green-500 p-4 rounded-full;
+}
+
+.content {
+  @apply flex flex-col gap-4;
+}
+
+.title {
+  @apply text-xl lg:text-2xl font-semibold;
+}
+
+.label {
+  @apply block text-gray-700 text-sm font-bold mb-2;
+}
+
+.input {
+  @apply shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-1;
+}
+
+.error_text {
+  @apply text-red-500 text-xs italic;
+}
+
+.congrats {
+  @apply flex flex-col items-center gap-8;
+}
+
+.congrats h1 {
+  @apply text-3xl font-bold text-darkblue text-center;
+}
